@@ -4,6 +4,7 @@ description: &description 'A photograph of Kamala Harris speaking on the phone w
 external_url: 'https://knowyourmeme.com/memes/we-did-it-joe' 
 image_url: 'https://i.kym-cdn.com/entries/icons/mobile/000/035/787/kamala.jpg'
 image_alt: *description
+image_title: *description
 parent: Memes
 layout: meme
 ---
