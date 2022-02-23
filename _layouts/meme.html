@@ -1,6 +1,19 @@
 ---
 layout: default
 ---
+
+{% capture title %}
+  {% if page.image_title and page.image_title != nil and page.image_title != "" %}
+    {{ page.image_title }}
+  {% elsif page.image_alt and page.image_alt != nil and page.image_alt != "" %}
+    {{ page.image_alt }}
+  {% elsif page.description and page.description != nil and page.description != "" %}
+    {{ page.description }}
+  {% else %}
+    Missing title text.
+  {% endif %}
+{% endcapture %}
+
 <h1>{{ page.title }}</h1>
-<img src="{{ page.image_url }}" alt="{{ page.image_alt }}"/>
+<img src="{{ page.image_url }}" alt="{{ page.image_alt | escape }}" title="{{ title | strip | escape }}"/>
 {{ content }}

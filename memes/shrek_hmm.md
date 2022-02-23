@@ -5,6 +5,7 @@ description: &description >
 external_url: https://knowyourmeme.com/memes/subcultures/shrek
 image_url: 'https://i.kym-cdn.com/photos/images/newsfeed/000/744/400/8d2.jpg'
 image_alt: *description
+image_title: *description
 parent: Memes
 layout: meme
 ---

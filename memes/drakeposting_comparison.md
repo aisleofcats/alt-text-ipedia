@@ -5,6 +5,7 @@ description: &description >
 external_url: 'https://knowyourmeme.com/memes/drakeposting' 
 image_url: 'https://imgflip.com/s/meme/Drake-Hotline-Bling.jpg'
 image_alt: *description
+image_title: *description
 parent: Memes
 layout: meme
 ---

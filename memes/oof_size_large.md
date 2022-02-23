@@ -5,6 +5,7 @@ description: &description >
 external_url: 'https://knowyourmeme.com/memes/is-this-a-pigeon'
 image_url: 'https://i.kym-cdn.com/entries/icons/mobile/000/032/425/Screen_Shot_2020-01-14_at_10.34.57_AM.jpg'
 image_alt: *description
+image_title: *description
 parent: Memes
 layout: meme
 ---

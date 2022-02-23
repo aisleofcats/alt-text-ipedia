@@ -5,6 +5,7 @@ description: &description >
 external_url: 'https://knowyourmeme.com/memes/buff-guys-typing-on-laptops-why-yes-how-could-you-tell'
 image_url: 'https://i.kym-cdn.com/photos/images/newsfeed/001/548/116/85d.jpg'
 image_alt: *description
+image_title: *description
 parent: Memes
 layout: meme
 ---

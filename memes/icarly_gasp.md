@@ -4,6 +4,7 @@ description: &description 'Carly, from the television show iCarly, sitting at a 
 external_url: 'https://knowyourmeme.com/memes/subcultures/icarly' 
 image_url: 'https://pbs.twimg.com/media/ECToSLxU0AAbwUR?format=jpg&name=900x900'
 image_alt: *description
+image_title: *description
 parent: Memes
 layout: meme
 ---
