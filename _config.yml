@@ -1,3 +1,9 @@
 title: "Alt-text-ipedia"
 description: aims to be a reasonably trustworthy repository of alt text for memes and other frequently shared image content, in the name of accessibility
 remote_theme: pmarsceill/just-the-docs
+
+gh_edit_link: true
+gh_edit_link_text: "(fork and then) edit this page on GitHub"
+gh_edit_repository: https://github.com/cathrynstenson/alt-text-ipedia
+gh_edit_branch: "live"
+gh_edit_view_mode: "tree"
