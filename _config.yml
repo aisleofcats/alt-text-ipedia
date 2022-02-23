@@ -7,3 +7,7 @@ gh_edit_link_text: "(fork and then) edit this page on GitHub"
 gh_edit_repository: https://github.com/cathrynstenson/alt-text-ipedia
 gh_edit_branch: "live"
 gh_edit_view_mode: "tree"
+
+aux_links:
+  "Alt-text-ipedia on GitHub":
+    - "//github.com/cathrynstenson/alt-text-ipedia"
