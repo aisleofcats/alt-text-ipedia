@@ -14,6 +14,37 @@ layout: default
   {% endif %}
 {% endcapture %}
 
-<h1>{{ page.title }}</h1>
-<img src="{{ page.image_url }}" alt="{{ page.image_alt | escape }}" title="{{ title | strip | escape }}"/>
-{{ content }}
+<style>
+    #alt-text {
+        width: 100%;
+        min-height: 7rem;
+    }
+
+    #meme-image {
+        max-width: 66%;
+    }
+</style>
+
+<div class="text-center">
+    <h1>{{ page.title }}</h1>
+    <img src="{{ page.image_url }}" alt="{{ page.image_alt | escape }}" title="{{ title | strip | escape }}" id="meme-image"/>
+    <hr />
+    <textarea id="alt-text" class="">{{ content | remove: '<p>' | remove: '</p>' | escape }}</textarea>
+    <br />
+    <button type="button" onclick="copy()" class="btn btn-primary px-6">Copy</button>
+    <button type="button" onclick="reset()" class="btn btn-outline px-6">Reset</button>
+</div>
+
+<script>
+    function copy()
+    {
+        var str = document.getElementById('alt-text');
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+
+    function reset()
+    {
+        document.getElementById('alt-text').value = "{{ content  | remove: '<p>' | remove: '</p>' | escape }}";
+    }
+</script>
